@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+    --primary-color: #fd951f;
+    --secondary-color: #1fd4fd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    text-decoration: none;
+
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+
+    background-color: aliceblue;
+}
+
+.container {
+    width: 50%;
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+/*===  HEADER ===*/
+
+header {
+    background-color: black;
+
+    width: 100%;
+    padding: 16px 0;
+
+    text-align: center;
+}
+
+header nav {
+    display: grid;
+    grid-template-columns: 1fr 140px;
+    align-items: center;
+    grid-gap: 24px;
+}
+
+header nav a {
+    justify-self: start;
+}
+
+/* LOGO */
+
+.logo h1 {
+    color: white;
+    font-size: 36px;
+    line-height: 46px;
+}
+
+.logo h2 {
+    color: var(--primary-color);
+    font-size: 24px;
+    line-height: 16px;
+    letter-spacing: 2px;
+}
+
+/* NEW QUESTION */
+
+header nav a:nth-child(2) {
+    display: flex;
+    align-items: center;
+
+    color: white;
+}
+
+header nav a:nth-child(2):hover {
+    color: var(--primary-color);
+    transition: 200ms;
+}
+
+header nav a:nth-child(2) i {
+    margin-right: 8px;
+}
+
+/*=== END HEADER  ===*/
+
+
+
+/*== MAIN ==*/
+
+/* PAGE: MAKEQUESTION and QUESTION */
+
+main section, main.container {
+    margin-bottom: 50px;
+}
+
+main section .header{
+    margin: 55px 0 30px 0;
+}
+
+section form h4 {
+    margin-bottom: 10px;
+}
+
+section form input[type="text"], section form textarea, main.container form textarea {
+    width: 100%;
+    padding-left: 12px;
+    font-size: 14px;
+    margin-bottom: 30px;
+    outline: 0;
+}
+
+section form input[type="text"] {
+    height: 50px;   
+    border: none;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+section form .description textarea, main.container form textarea  {
+    border: none;
+
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+    height: 240px;
+    resize: none;
+    padding-top: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+button:hover {
+    background-color:  #e28822;
+    transition: 200ms;
+}
+
+.button {
+    border: none;
+    padding: 10px;
+    
+    background-color: var(--primary-color);
+    
+    font-weight: bold;
+    font-size: 12px;
+
+    cursor: pointer;
+
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+/* PAGE: INDEX */
+
+section h2 {
+    margin: 50px 0 30px 0;
+}
+
+section .card .card-content {
+    padding: 20px;
+    height: 50px;
+    margin-bottom: 30px;
+
+    border-radius: 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    background-color: white;
+    color: black;
+
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+/* PAGE: QUESTION */
+
+main.container p.answer {
+    width: 100%;
+    margin-top: 15px;
+    height: 50px;
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    padding: 15px;
+    border-radius: 4px;
+
+}
+
+main.container h1 {
+    margin-top: 50px;
+}
+
+main.container p {
+    margin-top: 5px;
+}
+
+main.container h3 {
+    margin: 15px 0 15px 0;
+}
+
+main.container hr {
+    margin-top: 15px;
+}
+
+main.container h3.answers {
+    margin-top: 30px;
+}
+
+/*=== END MAIN ===*/
+
+
+
+
+/*== FOOTER ==*/
+
+footer {
+    height: 65px;
+    text-align: center;
+
+    margin-top: auto;
+}
+
+footer div {
+    padding-top: 23px;
+    padding-bottom: 23px;
+}
+
+footer, footer a{
+    color: #999;
+    background-color: rgb(209, 203, 203);
+}
+
+footer a:hover {
+    color: rgb(92, 91, 91);
+    transition: 200ms;
+}
+
+/*=== END FOOTER ===*/
+
+
+
+
+
+
